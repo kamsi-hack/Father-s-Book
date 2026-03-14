@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Father's Book Browser</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div class="branding">
+
+<img src="logo.png" class="logo">
+
+<h1>Father's Book</h1>
+
+</div>
+
+<div class="controls">
+
+<button onclick="goBack()">◀</button>
+<button onclick="goForward()">▶</button>
+<button onclick="reloadPage()">⟳</button>
+
+<input id="urlBar" placeholder="Search the web or type a URL">
+
+<button onclick="search()">Search</button>
+
+<button onclick="newTab()">New Tab</button>
+
+<button onclick="addBookmark()">Bookmark</button>
+
+<button onclick="askAI()">AI</button>
+
+</div>
+
+</header>
+
+<div id="tabs"></div>
+
+<iframe id="browser" src="https://www.google.com"></iframe>
+
+<script src="main.js"></script>
+<script src="tabs.js"></script>
+<script src="bookmarks.js"></script>
+<script src="history.js"></script>
+<script src="downloads.js"></script>
+<script src="ai.js"></script>
+<script src="fathersbook.js"></script>
+
+</body>
+
+</html>
